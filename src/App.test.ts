@@ -35,6 +35,7 @@ describe('Flexbox', () => {
     });
 
     it('Рисуется нужное изображение', async () => {
+        // await page.setViewport({ width: 800, height: 600 });
         const image = await page.screenshot();
 
         expect(image).toMatchImageSnapshot();
